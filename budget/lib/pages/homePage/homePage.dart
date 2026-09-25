@@ -14,6 +14,7 @@ import 'package:budget/pages/homePage/homePageUsername.dart';
 import 'package:budget/pages/homePage/homePageBudgets.dart';
 import 'package:budget/pages/homePage/homePageUpcomingTransactions.dart';
 import 'package:budget/pages/homePage/homePageAllSpendingSummary.dart';
+import 'package:budget/pages/homePage/homePageTotalExpense.dart';
 import 'package:budget/pages/editHomePage.dart';
 import 'package:budget/pages/settingsPage.dart';
 import 'package:budget/pages/homePage/homePageCreditDebts.dart';
@@ -327,6 +328,7 @@ class HomePageState extends State<HomePage> with TickerProviderStateMixin {
                             ),
                           )
                         : SizedBox(height: 5),
+                    HomePageTotalExpense(),
                     // Not full screen
                     if (enableDoubleColumn(context) != true) ...[
                       KeepAliveClientMixin(child: HomePageRatingBox()),
